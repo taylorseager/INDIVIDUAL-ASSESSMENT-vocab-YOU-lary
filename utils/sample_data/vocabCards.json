@@ -1,98 +1,50 @@
 {
 "-NsB3izx5dI2KzMwHMBE":{
-  "title":"Python",
+  "title":"Callback Function",
   "firebaseKey":"-NsB3izx5dI2KzMwHMBE",
-  "definition":"Python is a versatile, high-level programming language known for its readability and simplicity, making it suitable for web development, data analysis, artificial intelligence, and automation",
-  "language_id":"language",
+  "definition":"A function passed as an argument to another function, which will be invoked or executed later, often used in asynchronous operations.",
+  "language_id":"-GTnsQ9DVj_kIVkrllDY",
   "timeSubmitted":"2023-03-05T18:51:18Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 },
 "-NsB3izyd4z90DHMsqzt":{
-  "title":"JavaScript",
+  "title":"Promise",
   "firebaseKey":"-NsB3izyd4z90DHMsqzt",
-  "definition":"JavaScript is a dynamic scripting language primarily used for front-end web development to enhance user interactivity and create dynamic content within browsers",
-  "language_id":"language",
+  "definition":"An object representing the eventual completion or failure of an asynchronous operation, providing a cleaner and more structured way to handle asynchronous code.",
+  "language_id":"-GTnsQ9DVj_kIVkrllDY",
   "timeSubmitted":"2024-02-23T01:33:10Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 },
 "-NsB3izyd4z90DHMsqzu":{
-  "title":"C++",
+  "title":"Flexbox",
   "firebaseKey":"-NsB3izyd4z90DHMsqzu",
-  "definition":"C++ is a powerful, multi-paradigm programming language widely used for system/application development, game development, and performance-critical tasks due to its efficiency and low-level features",
-  "language_id":"language",
+  "definition":"A layout model in CSS that allows you to design complex layouts more efficiently and with less code, especially for distributing space and aligning items within a container.",
+  "language_id":"-Q9DVj_kIVkrllDZNsGT",
   "timeSubmitted":"2023-09-26T07:13:32Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 },
 "-NsB3izzCPQSyiVEihgU":{
-  "title":"GitHub",
+  "title":"Grid Layout",
   "firebaseKey":"-NsB3izzCPQSyiVEihgU",
   "definition":"GitHub is a web-based platform that provides version control and collaborative features for software development projects, facilitating code hosting, collaboration, and continuous integration",
-  "language_id":"platform",
+  "language_id":"-Q9DVj_kIVkrllDZNsGT",
   "timeSubmitted":"2024-01-24T20:02:34Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 },
 "-NsB3j--qnAc5ZL5O8qV":{
-  "title":"Google Cloud Platform (GCP)",
+  "title":"Form",
   "firebaseKey":"-NsB3j--qnAc5ZL5O8qV",
-  "definition":"Google Cloud Platform is a suite of cloud computing services provided by Google, offering solutions for computing, storage, machine learning, and data analytics, empowering developers to build and scale applications in the cloud",
-  "language_id":"platform",
+  "definition":"An HTML element used to collect user input, consisting of various input elements like text fields, checkboxes, radio buttons, and buttons.",
+  "language_id":"-EOWKZRI9p7THj-NsGTQ9",
   "timeSubmitted":"2023-06-17T01:36:32Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 },
 "-NsB3j-0ogo_itKWITl-":{
-  "title":"Amazon Web Services (AWS)",
+  "title":"Attribute",
   "firebaseKey":"-NsB3j-0ogo_itKWITl-",
-  "definition":"AWS is a comprehensive cloud computing platform by Amazon, offering a wide array of services, including computing power, storage, databases, machine learning, and more, catering to the diverse needs of software development and deployment",
-  "language_id":"platform",
+  "definition":"Additional information or properties that can be applied to HTML elements to modify their behavior or appearance. Attributes are added to the opening tag of an element and are usually in the form of name-value pairs",
+  "language_id":"-EOWKZRI9p7THj-NsGTQ9",
   "timeSubmitted":"2023-07-07T16:21:07Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-NsB3j-0ogo_itKWITl0":{
-  "title":"Postman",
-  "firebaseKey":"-NsB3j-0ogo_itKWITl0",
-  "definition":"Postman is a versatile API development and testing platform that enables software engineers to design, test, and manage APIs efficiently through a user-friendly interface",
-  "language_id":"tool",
-  "timeSubmitted":"2024-01-07T10:51:35Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-NB3j-1DSDR36qRbvVVma":{
-  "title":"VSCode",
-  "firebaseKey":"-NB3j-1DSDR36qRbvVVma",
-  "definition":"VSCode is a lightweight, open-source code editor developed by Microsoft that supports a wide range of programming languages, provides powerful extensions for additional features, and is known for its fast performance and customizable interface",
-  "language_id":"tool",
-  "timeSubmitted":"2023-03-05T13:01:26Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-NsB3j-1wZ8DRqRbvVVma":{
-  "title":"Eclipse",
-  "firebaseKey":"-NsB3j-1wZ8DRqRbvVVma",
-  "definition": "Eclipse is a popular, open-source integrated development environment (IDE) that supports multiple programming languages It provides a rich set of features for code editing, debugging, and project management",
-  "language_id":"tool",
-  "timeSubmitted":"2023-05-05T13:11:06Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-Znsj-1DSr1DRqRbvVVma":{
-  "title":"Debugging",
-  "firebaseKey":"-Znsj-1DSr1DRqRbvVVma",
-  "definition":"The process of identifying and fixing errors, bugs, or issues in software code to ensure that it runs smoothly and produces the expected results",
-  "language_id":"vocab",
-  "timeSubmitted":"2023-07-05T13:03:16Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-Na2Bj-1DSDslo83exVma":{
-  "title":"Refactoring",
-  "firebaseKey":"-Na2Bj-1DSDslo83exVma",
-  "definition":"The process of restructuring existing code without changing its external behavior, aiming to improve its readability, maintainability, and efficiency",
-  "language_id":"vocab",
-  "timeSubmitted":"2023-05-05T13:41:26Z",
-  "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
-},
-"-NsB99j-2pivYyJ8NTFyx":{
-  "title":"Scalability",
-  "firebaseKey":"-NsB99j-2pivYyJ8NTFyx",
-  "definition":"The ability of a software system to handle increased workload or demand by adapting and expanding its resources, often measured in terms of performance and efficiency",
-  "language_id":"vocab",
-  "timeSubmitted":"2023-09-16T00:55:01Z",
   "uid":"1sRmS9WfHcT6VkX5oniClr6yTua2"
 }
 }
