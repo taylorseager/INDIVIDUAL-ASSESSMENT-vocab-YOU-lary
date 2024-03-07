@@ -1,4 +1,4 @@
-// import clearDom from '../utils/clearDom';
+import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
 const emptyVocabCards = () => {
@@ -7,7 +7,7 @@ const emptyVocabCards = () => {
 };
 
 const showAllVocabCards = (array) => {
-  // clearDom();
+  clearDom();
 
   if (array.length === 0) {
     emptyVocabCards();
