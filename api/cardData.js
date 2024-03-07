@@ -15,6 +15,18 @@ const getCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getSingleCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabCards/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 const createVocabCard = (payload) => new Promise((resolve, reject) => {
   console.warn(payload);
   fetch(`${endpoint}/vocabCards.json`, {
@@ -42,4 +54,22 @@ const updateVocabCard = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export { getCards, createVocabCard, updateVocabCard };
+const deleteVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabCards/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then(resolve)
+    .catch(reject);
+});
+
+export {
+  getCards,
+  createVocabCard,
+  updateVocabCard,
+  getSingleCard,
+  deleteVocabCard
+};
