@@ -15,4 +15,17 @@ const getCards = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default getCards;
+const updateVocabCard = (payload) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabCards/${payload.firebaseKey}.json?`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((response) => response.json())
+    .then(resolve)
+    .catch(reject);
+});
+
+export { getCards, updateVocabCard };

@@ -1,13 +1,16 @@
+// import showAllVocabCards from '../../pages/showVocabCards';
 // import { signOut } from '../../utils/auth';
+import createVocabEntryForm from '../forms/addCardForm';
 
-const navEvents = () => {
-//   document.querySelector('#logout-button')
-//     .addEventListener('click', signOut);
-// };
-// console.warn('signout');
+// import showAllVocabCards from '../../pages/showVocabCards';
+
+const navEvents = (uid) => {
+  // document.querySelector('#logout-button')
+  //   .addEventListener('click', signOut);
 
   document.querySelector('#createEntry').addEventListener('click', () => {
-    console.warn('clicked create entry');
+    console.warn('I clicked!');
+    createVocabEntryForm(uid);
   });
 };
 

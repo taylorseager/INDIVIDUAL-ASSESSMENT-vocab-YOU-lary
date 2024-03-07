@@ -1,3 +1,4 @@
+// import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
 const emptyVocabCards = () => {
@@ -17,6 +18,7 @@ const showAllVocabCards = (array) => {
       <div class="card">
       <div class="card-body" style="height: 180px;">
         <h5 class="card-title">${obj.title}</h5>
+          <p class="card-text">${obj.language_id}</p>
           <p class="card-text">${obj.definition}</p>
           <i id="edit-book-btn--${obj.firebaseKey}" class="btn btn-info">Edit</i>
           <i id="delete-book-btn--${obj.firebaseKey}" class="btn btn-danger">Delete</i>
