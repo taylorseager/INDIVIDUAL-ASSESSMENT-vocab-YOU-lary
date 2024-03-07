@@ -20,8 +20,8 @@ const showAllVocabCards = (array) => {
         <h5 class="card-title">${obj.title}</h5>
           <p class="card-text">${obj.language_id}</p>
           <p class="card-text">${obj.definition}</p>
-          <i id="edit-book-btn--${obj.firebaseKey}" class="btn btn-info">Edit</i>
-          <i id="delete-book-btn--${obj.firebaseKey}" class="btn btn-danger">Delete</i>
+          <i id="edit-book--${obj.firebaseKey}" class="btn btn-info">Edit</i>
+          <i id="delete-book--${obj.firebaseKey}" class="btn btn-danger">Delete</i>
       </div>
     </div>`;
     });
