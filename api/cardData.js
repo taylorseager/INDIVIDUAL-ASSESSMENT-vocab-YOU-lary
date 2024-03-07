@@ -54,9 +54,22 @@ const updateVocabCard = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const deleteVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabCards/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then(resolve)
+    .catch(reject);
+});
+
 export {
   getCards,
   createVocabCard,
   updateVocabCard,
-  getSingleCard
+  getSingleCard,
+  deleteVocabCard
 };
