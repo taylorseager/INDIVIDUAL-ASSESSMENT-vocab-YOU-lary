@@ -6,10 +6,8 @@ import showAllVocabCards from '../../pages/showVocabCards';
 
 const domEvents = (uid) => {
   document.querySelector('#cards-container').addEventListener('click', (e) => {
-    console.warn(e.target.id);
     if (e.target.id.includes('edit')) {
       const [, firebaseKey] = e.target.id.split('--');
-      console.warn('edit button clicked');
 
       getCardDetails(firebaseKey).then((cardObj) => {
         createVocabEntryForm(cardObj, uid);

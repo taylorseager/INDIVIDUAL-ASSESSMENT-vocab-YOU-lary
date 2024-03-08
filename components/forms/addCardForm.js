@@ -1,7 +1,8 @@
 import clearDom from '../../utils/clearDom';
 import renderToDOM from '../../utils/renderToDom';
+import selectLanguage from './selectLanguage';
 
-const createVocabEntryForm = (obj = {}) => {
+const createVocabEntryForm = (obj = {}, uid) => {
   clearDom();
   const domString = `
   <form id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="mb-4">
@@ -9,10 +10,8 @@ const createVocabEntryForm = (obj = {}) => {
     <label for="title" class="form-label">Title</label>
     <input class="form-control" id="title" value="${obj.title || ''}"required>
   </div>
-  <div class="mb-3">
-    <label for="language_id" class="form-label">Language</label>
-    <input type="dropdown" class="form-control" id="language_id" value="${obj.language_id || ''}"required>
-  </div>
+  <div class="form-select mb-3" id="select-language">Language
+    </div>
   <div class="mb-3">
   <label for="definition" class="form-label">Definition</label>
   <input class="form-control" id="definition" value="${obj.definition || ''}"required>
@@ -21,6 +20,8 @@ const createVocabEntryForm = (obj = {}) => {
 </form> 
   `;
   renderToDOM('#cards-container', domString);
+
+  selectLanguage(`${obj.language_id || ''}`, uid);
 };
 
 export default createVocabEntryForm;
