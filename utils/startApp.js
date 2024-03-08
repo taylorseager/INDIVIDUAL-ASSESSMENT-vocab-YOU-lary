@@ -15,7 +15,7 @@ const startApp = (uid) => {
   logoutButton(); // ADD THE LOGOUT BUTTON COMPONENT
   navEvents(uid); // ATTACH THE EVENT LISTENERS TO THE NAVBAR
 
-  getCards(uid).then(showAllVocabCards);
+  getCards(uid).then((vocab) => showAllVocabCards(vocab, uid));
 };
 
 export default startApp;
