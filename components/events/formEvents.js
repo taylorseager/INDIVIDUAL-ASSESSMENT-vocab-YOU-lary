@@ -3,7 +3,6 @@ import showAllVocabCards from '../../pages/showVocabCards';
 
 const formEvents = (uid) => {
   document.querySelector('#cards-container').addEventListener('submit', (e) => {
-    console.warn('submit clicked');
     e.preventDefault();
     if (e.target.id.includes('submit-card')) {
       const payload = {
@@ -14,7 +13,6 @@ const formEvents = (uid) => {
       };
 
       createVocabCard(payload).then(({ name }) => {
-        console.warn(payload);
         const patchPayload = { firebaseKey: name };
 
         updateVocabCard(patchPayload).then(() => {
