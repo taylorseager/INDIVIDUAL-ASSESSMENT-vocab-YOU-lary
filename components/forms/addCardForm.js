@@ -2,7 +2,7 @@ import clearDom from '../../utils/clearDom';
 import renderToDOM from '../../utils/renderToDom';
 import selectLanguage from './selectLanguage';
 
-const createVocabEntryForm = (obj = {}, uid) => {
+const createVocabEntryForm = (uid, obj = {}) => {
   clearDom();
   const domString = `
   <form id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="mb-4">
@@ -21,7 +21,7 @@ const createVocabEntryForm = (obj = {}, uid) => {
   `;
   renderToDOM('#cards-container', domString);
 
-  selectLanguage(`${obj.language_id || ''}`, uid);
+  selectLanguage(uid, `${obj.language_id || ''}`);
 };
 
 export default createVocabEntryForm;

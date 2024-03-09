@@ -10,7 +10,7 @@ const domEvents = (uid) => {
       const [, firebaseKey] = e.target.id.split('--');
 
       getCardDetails(firebaseKey).then((cardObj) => {
-        createVocabEntryForm(cardObj, uid);
+        createVocabEntryForm(uid, cardObj);
       });
     }
 
@@ -20,7 +20,7 @@ const domEvents = (uid) => {
         const [, firebaseKey] = e.target.id.split('--');
 
         deleteVocabCard(firebaseKey).then(() => {
-          getCards(uid).then(showAllVocabCards);
+          getCards(uid).then((cards) => showAllVocabCards(cards, uid));
         });
       }
     }
