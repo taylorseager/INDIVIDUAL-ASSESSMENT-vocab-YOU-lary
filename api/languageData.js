@@ -27,4 +27,19 @@ const getSingleLanguage = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export { getLanguages, getSingleLanguage };
+const getLanguageByName = (languageName) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/languages.json?orderBy="languageName"&equalTo="${languageName}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application.json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const firstItem = data ? Object.values(data)[0] : null;
+      resolve(firstItem);
+    })
+    .catch(reject);
+});
+
+export { getLanguages, getSingleLanguage, getLanguageByName };

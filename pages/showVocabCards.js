@@ -8,7 +8,6 @@ const emptyVocabCards = () => {
 };
 
 const showAllVocabCards = async (array, uid) => {
-  console.warn(array);
   console.warn(uid);
   clearDom();
 
