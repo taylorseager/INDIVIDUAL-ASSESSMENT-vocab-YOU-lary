@@ -3,6 +3,7 @@ import client from '../utils/client';
 const endpoint = client.database_URL;
 
 const getLanguages = (uid) => new Promise((resolve, reject) => {
+  console.warn(uid);
   fetch(`${endpoint}/languages.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
