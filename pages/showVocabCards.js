@@ -8,8 +8,6 @@ const emptyVocabCards = () => {
 };
 
 const showAllVocabCards = async (array, uid) => {
-  console.warn(array);
-  console.warn(uid);
   clearDom();
 
   if (array.length === 0) {
@@ -18,7 +16,6 @@ const showAllVocabCards = async (array, uid) => {
     let domString = '';
     const languages = await getLanguages(uid);
     array.forEach((obj) => {
-      console.warn(obj);
       const singleLanguage = languages.find((lang) => lang.firebaseKey === obj.language_id);
       domString += `
       <div class="card">
@@ -26,8 +23,10 @@ const showAllVocabCards = async (array, uid) => {
         <h5 class="card-title">${obj.title}</h5>
           <p class="card-text">${singleLanguage.languageName}</p>
           <p class="card-text">${obj.definition}</p>
+          <div id="cardBtns">
           <button id="edit-book--${obj.firebaseKey}" type="button" class="btn btn-success">Edit</button>
           <button id="delete-book--${obj.firebaseKey}" class="btn btn-danger">Delete</button>
+          </div>
       </div>
     </div>`;
     });

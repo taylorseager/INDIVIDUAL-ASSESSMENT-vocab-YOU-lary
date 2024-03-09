@@ -1,7 +1,6 @@
 import client from '../utils/client';
 
 const endpoint = client.database_URL;
-// console.warn('db url check', endpoint);
 
 const getCards = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabCards.json?orderBy="uid"&equalTo="${uid}"`, {
@@ -28,7 +27,6 @@ const getSingleCard = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const createVocabCard = (payload) => new Promise((resolve, reject) => {
-  console.warn(payload);
   fetch(`${endpoint}/vocabCards.json`, {
     method: 'POST',
     headers: {
