@@ -8,11 +8,13 @@ const navigationBar = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
         <button id="createEntry" type="button" class="btn btn-outline-primary">Create Entry</button>
-      </ul>
-      </form>
+        <button type="button" class="btn btn-outline-success" id="allFilter">All Languages</button>
+        <button type="button" class="btn btn-outline-info" id="HtmlFilter">HTML</button>
+        <button type="button" class="btn btn-outline-warning" id="CssFilter">CSS</button>
+        <button type="button" class="btn btn-outline-danger" id="JsFilter">JavaScript</button>
     </div>
+    <div id="login-form-container"></div>
   </div>
 </nav>`;
 

@@ -4,8 +4,6 @@ import { getLanguages } from '../../api/languageData';
 const selectLanguage = (uid, languageName) => {
   let domString = '<select id="selectLanguage">';
 
-  console.warn(uid);
-
   getLanguages(uid).then((languageArray) => {
     languageArray.forEach((lang) => {
       domString += `

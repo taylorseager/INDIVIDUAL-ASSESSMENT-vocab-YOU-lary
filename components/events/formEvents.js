@@ -5,7 +5,6 @@ const formEvents = (uid) => {
   document.querySelector('#cards-container').addEventListener('submit', (e) => {
     e.preventDefault();
     if (e.target.id.includes('submit-card')) {
-      console.warn('submit the damn card');
       const currentTimestamp = Date.now(); // pulls the time right now in milliseconds
       const payload = {
         title: document.querySelector('#title').value,
@@ -14,7 +13,6 @@ const formEvents = (uid) => {
         timeSubmitted: new Date(currentTimestamp).toISOString(), // creates a new date object, toISOString converts the time to desired format
         uid
       };
-      console.warn('lang id', payload);
       createVocabCard(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateVocabCard(patchPayload).then(() => {

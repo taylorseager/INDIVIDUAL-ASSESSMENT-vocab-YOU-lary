@@ -3,7 +3,6 @@ import client from '../utils/client';
 const endpoint = client.database_URL;
 
 const getLanguages = (uid) => new Promise((resolve, reject) => {
-  console.warn(uid);
   fetch(`${endpoint}/languages.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
@@ -27,4 +26,19 @@ const getSingleLanguage = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export { getLanguages, getSingleLanguage };
+const getLanguageByName = (languageName) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/languages.json?orderBy="languageName"&equalTo="${languageName}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application.json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const firstItem = data ? Object.values(data)[0] : null;
+      resolve(firstItem);
+    })
+    .catch(reject);
+});
+
+export { getLanguages, getSingleLanguage, getLanguageByName };
